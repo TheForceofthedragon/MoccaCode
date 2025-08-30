@@ -4,13 +4,13 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 import Container from '@/components/Container'
 import { site } from '@/lib/site'
 import { trackEvent } from '@/lib/track'
-import WhatsAppFab from '@/components/WhatsAppFab'
+
 
 export default function Page() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 [mask-image:radial-gradient(50%_50%_at_50%_20%,black,transparent)]">
-        <div className="absolute -inset-[10%] bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/10 to-emerald-500/10 blur-3xl" />
+      <div className="absolute inset-0 -z-10 pointer-events-none [mask-image:radial-gradient(50%_50%_at_50%_20%,black,transparent)]">
+        <div className="absolute -inset-[10%] -z-10 pointer-events-none bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/10 to-emerald-500/10 blur-3xl" />
       </div>
       <Container>
         <div className="pt-16 pb-20 md:pt-24 md:pb-28">
@@ -23,7 +23,7 @@ export default function Page() {
           <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.7, delay:0.15}} className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={"/contacto"}
-              target="_blank"
+            
               className="inline-flex items-center gap-2 rounded-2xl bg-black px-5 py-3 text-white dark:bg-white dark:text-black hover:opacity-90"
               onClick={() => trackEvent('click_whatsapp', { position: 'hero' })}
             >
@@ -38,7 +38,7 @@ export default function Page() {
           </div>
         </div>
       </Container>
-      <WhatsAppFab />
+      
     </section>
   )
 }
