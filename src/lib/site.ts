@@ -30,16 +30,16 @@ export const site = {
     {
       title: 'SoulCar — Sitio de reservas para autos de eventos',
       description: 'Frontend Next.js + Tailwind con integración a Apps Script / Firebase.',
-      href: 'https://tusitio1.com',
+      href: 'https://soulcar-eventos.netlify.app/',
       stack: ['Next.js','Tailwind','Vercel'],
-      image: '/proyectos/soulcar.webp', imageAlt: 'Preview de SoulCar',
+      image: '/AlquilerCarros.png', imageAlt: 'Preview de SoulCar',
     },
     {
-      title: 'Mocca Code — Estudio web minimalista',
-      description: 'Landing page optimizada con SEO, animaciones y formulario.',
-      href: 'https://tusitio2.com',
-      stack: ['React','Tailwind','Framer Motion'],
-      image: '/proyectos/mocca.webp', imageAlt: 'Preview de Mocca Code',
+      title: 'Forga — Inmobiliaria',
+      description: 'Landing page optimizada, animaciones y formulario.',
+      href: 'https://forga-web.vercel.app/',
+      stack: ['React','Tailwind','Vercel'],
+      image: '/Inmobiliaria.png', imageAlt: 'Preview de Forga',
     },
   ] as Project[],
 }
